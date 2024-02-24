@@ -107,6 +107,7 @@ const converter = (element, targetElement, type) => {
         request.setRequestHeader('content-type', 'application/json');
         request.send();
 
+
         request.onload = () => {
             if (request.status === 200) {
                 const data = JSON.parse(request.response);
