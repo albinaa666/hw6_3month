@@ -102,10 +102,10 @@ const eurInput = document.querySelector('#eur');
 
 const converter = (element, targetElement, type) => {
     element.oninput = () => {
-        const request = new XMLHttpRequest();
-        request.open('GET', '../data/converter.json');
-        request.setRequestHeader('content-type', 'application/json');
-        request.send();
+        const request = new XMLHttpRequest()
+        request.open('GET', '../data/converter.json')
+        request.setRequestHeader('content-type', 'application/json')
+        request.send()
 
 
         request.onload = () => {
